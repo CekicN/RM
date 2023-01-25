@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\Vezbe\Oktobar 2022 client\Oktobar 2022 client\Source.cpp(16,47): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\Vezbe\Oktobar 2022 client\Oktobar 2022 client\Source.cpp(99,28): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Oktobar 2022 client.vcxproj -> C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\Vezbe\Oktobar 2022 client\x64\Debug\Oktobar 2022 client.exe
