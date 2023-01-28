@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\Blanketi\2022_sept\client\client\Source.cpp(45,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\Blanketi\2022_sept\client\client\Source.cpp(63,23): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  client.vcxproj -> C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\Blanketi\2022_sept\client\x64\Debug\client.exe

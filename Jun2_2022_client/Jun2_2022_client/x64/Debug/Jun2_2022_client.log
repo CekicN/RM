@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\Vezbe\Jun2_2022_client\Jun2_2022_client\Source.cpp(12,54): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\Vezbe\Jun2_2022_client\Jun2_2022_client\Source.cpp(31,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\Vezbe\Jun2_2022_client\Jun2_2022_client\Source.cpp(50,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Jun2_2022_client.vcxproj -> C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\Vezbe\Jun2_2022_client\x64\Debug\Jun2_2022_client.exe

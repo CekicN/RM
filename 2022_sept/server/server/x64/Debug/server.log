@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\Blanketi\2022_sept\server\server\Source.cpp(79,6): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\Blanketi\2022_sept\server\server\Source.cpp(103,7): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\Blanketi\2022_sept\server\server\Source.cpp(47,6): warning C4101: 'size': unreferenced local variable
+  server.vcxproj -> C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\Blanketi\2022_sept\server\x64\Debug\server.exe
