@@ -1,0 +1,8 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(500,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  Source.cpp
+C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\Vezbe\April_2022\April_2022\Source.cpp(9,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\Vezbe\April_2022\April_2022\Source.cpp(10,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\Vezbe\April_2022\April_2022\Source.cpp(13,30): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\Vezbe\April_2022\April_2022\Source.cpp(14,30): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\Vezbe\April_2022\April_2022\Source.cpp(17,32): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  April_2022.vcxproj -> C:\Users\Nikola\Desktop\Faks\3.godina\Mreze\LAB6\Apache24\cgi-bin\April_2022.exe
