@@ -7,3 +7,6 @@ Link za Apache24: <a href="https://www.apachelounge.com/download/">Apache24</a><
 <h4>Apache24 folder staviti direktno u C: particiju<h4><br>
 Ako nije u C: onda mora u fajlu <bold>httpd.conf</bold> koji je u <bold>conf</bold> direktorijumu da se promeni <bold>SRVROOT</bold> da bude putanja do Apache24 foldera
 
+<h3>U reseni blanketi ima i teorija</h3><br>
+<a href="https://www.brainscape.com/flashcards/drugi-kolokvijum-10985540/packs/19561856">Teorija sa karticama</a>
+
