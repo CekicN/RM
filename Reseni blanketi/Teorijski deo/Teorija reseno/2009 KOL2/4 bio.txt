@@ -1,0 +1,4 @@
+Ako je segment izgubljen a time out predugacak, izvor ce videti da je gubitak segmenta pre isteka
+time out-a tako sto se primi vise puta isti ACK. Posto TCP ne koristi NAK, po prijemu segmenta ce van reda ponovo
+ce da potvrdi poslednji korektni segment. Ako TCP 3 puta primi ACK sa istim rednim brojem on ce odmah
+izvrsiti retransmisiju, to je brza retransmisija.

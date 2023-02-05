@@ -1,0 +1,4 @@
+Lokalni DNS
+Root DNS
+Top Level DNS
+Autorizovani DNS

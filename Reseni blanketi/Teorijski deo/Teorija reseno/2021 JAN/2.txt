@@ -1,0 +1,6 @@
+datagram sadrzi 2400 bytes od cega je 20 zaglavlje, znaci data je 2380 bytes
+
+TL1 = 680 + 20 = 700, ID = 422, MF = 1, FO = 0
+TL2 = 680 + 20 = 700, ID = 422, MF = 1, FO = 85
+TL3 = 680 + 20 = 700, ID = 422, MF = 1, FO = 170
+TL4 = 340 + 20 = 360, ID = 422, MF = 0, FO = 255

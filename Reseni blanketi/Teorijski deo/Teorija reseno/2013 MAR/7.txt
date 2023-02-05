@@ -1,0 +1,8 @@
+Dhcp omogucava da se klijentima automatski dodeli ip adresa, kao i dodatne informacije npr maska,gateway i
+adresa dns-a.
+Host salje dhcpdiscover poruku koja se prenosi u IP datagramu za source stavlja 0.0.0.0 za destination 255.255.255.255
+Ako u mrzi postoji dhcp odgovara sa dhcpoffer, a ako ne postoji onda ce odredjeni agent proslediti zahtev dhcp serveru
+Klijen dobija poudu od dhcp-a i odgovara sa dhcprequest u kome navodi podatke koje zeli da dobije.
+Dhcp server ako su podaci njegovi odgovara sa dhcpack.
+
+76 slajd 7. prez

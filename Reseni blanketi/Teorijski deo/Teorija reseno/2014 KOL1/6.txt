@@ -1,0 +1,6 @@
+Vrlo je pogodo za ogrodmne mreze sa puno rutera. 
+Rutere podeliti u manje regione tako da:
+Svaki ruter zna detalje o svom regiona 
+regioni su povezani preko jednog ili vise rutera
+Jedan ili vise rutera u regionu su zaduzeni za komunikaciju sa drugim regionima(Gateway ruteru)
+Optimalan broj nivoa za mrezu N je ln(N)

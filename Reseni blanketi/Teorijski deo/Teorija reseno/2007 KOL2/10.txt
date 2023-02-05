@@ -1,0 +1,15 @@
+﻿ Hash funkcijom Bob računa sažetak poruke koju šalje Alisi.
+
+ Bob šifrira svojim tajnim ključem sažetak poruke i na taj način kreira digitalni potpis.
+
+ Zajedno s orginalnim dokumentom Bob šalje i digitalni potpis.
+
+ Alisa dobija Bobovu potpisanu poruku. Iz orginalne poruke izračuna sažetak.
+
+ Alisa dešifruje digitalni potpis Bobovim javnim ključem i upoređuje dešfrovani sažetak sa onim koji je sama izračunala. 
+
+
+
+
+
+//pobrojati sva tipa!

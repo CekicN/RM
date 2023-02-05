@@ -1,0 +1,2 @@
+Rekurzivni - razresenje imena je na kontaktiranom NS-u
+Iterativni - kontaktirani NS odgovara sa IP sledeceg NS-a

@@ -1,0 +1,2 @@
+u polju podataka se nalazi: DLE STX A DLE B DLE ETX
+kroz kanal: DLE STX DLE DLE STX A DLE DLE B DLE DLE ETX DLE ETX

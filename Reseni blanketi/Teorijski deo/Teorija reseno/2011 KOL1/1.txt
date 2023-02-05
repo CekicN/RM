@@ -1,0 +1,7 @@
+fizicki nivo
+DLL
+mrezni
+trans
+sesijski
+prezentacioni
+aplikataivni

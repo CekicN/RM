@@ -1,0 +1,11 @@
+a) TL=3020 bajtova fragment offset=0 MF=0
+B) 3 fragmenta
+   TL=1500 MF=1 fragment offset=0
+   TL=1500 MF=1 foffset=185
+   Tl=60 MF=0 offset=370
+C) 3 fragmenta
+   TL=1500 MF=1 fragment offset=0
+   TL=1500 MF=1 foffset=185
+   Tl=60 MF=0 offset=370
+
+   

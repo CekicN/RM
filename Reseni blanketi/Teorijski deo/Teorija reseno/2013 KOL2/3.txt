@@ -1,0 +1,1 @@
+jer se polje TTL dekrementira pri prolasku kroz svaki ruter

@@ -1,0 +1,2 @@
+Ethernet i PPP(Internet standard)
+HDLC isto ovde ga nema (ISO standard)

@@ -1,0 +1,2 @@
+Svaki interfejs rutera predstavlja jedan kolizioni domen (tj zasebni mrezni segment).
+ima ih 9

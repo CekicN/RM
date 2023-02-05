@@ -1,0 +1,1 @@
+Prestaje sa slanjem, salje JAM Signal i ulazi u exp. backoff gde ceka k*512 bitskih intervala gde je k = (0,2^i-1) gde je i - redni broj kolizije.(Nakon 10 kolizija, K se bira iz opsega 0....1023) Ako dodje do 16 kolizija, salje poruka o gresci. K se bira slucajno.

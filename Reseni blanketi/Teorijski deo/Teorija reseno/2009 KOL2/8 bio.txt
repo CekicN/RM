@@ -1,0 +1,9 @@
+u TLD bazi:
+
+snoopy.rs, dns1.snoopy.rs, NS
+dns1.snoopy.rs, 124.101.21.3, A    <- moze random IP adresa
+
+u autorizovani DNS server:
+
+www.snoopy.rs, type A     <- internet Address
+mail.snoopy.rs, type MX   <- Mail eXchange

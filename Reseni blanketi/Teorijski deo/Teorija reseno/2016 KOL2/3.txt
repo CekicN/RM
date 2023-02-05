@@ -1,0 +1,4 @@
+ethernet adresu rutera r1
+220.23.16.162
+nece
+emituje arp na ethernet

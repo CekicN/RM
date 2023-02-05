@@ -1,0 +1,13 @@
+HLEN=5->20B zaglavlje
+TL=100
+Podaci=100-20=80B
+offset=100
+
+offset= redniBrojPrvogBajta /8 => 
+=> redniBrojPrvogBajta = offset*8
+redniBrojPrvogBajta = 800 (redni broj prvog prenetog bajta)
+
+redniBrojPoslednjegBajta = redniBrojPrvogBajta + podaci
+redniBrojPrvogBajta = 800 + 80 = 880
+
+

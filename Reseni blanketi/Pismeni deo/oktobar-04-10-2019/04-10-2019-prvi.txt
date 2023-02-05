@@ -1,0 +1,193 @@
+System Bootstrap, Version 12.1(3r)T2, RELEASE SOFTWARE (fc1)
+Copyright (c) 2000 by cisco Systems, Inc.
+PT 1001 (PTSC2005) processor (revision 0x200) with 60416K/5120K bytes of memory
+
+Readonly ROMMON initialized
+
+Self decompressing the image :
+########################################################################## [OK]
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+Router>en
+Router#conf t
+Router(config)#int fa0/0
+Router(config-if)#ip address 192.16.5.1 255.255.255.0
+Router(config-if)#no shut down
+Router(config-if)#exit
+
+Router(config)#int fa1/0
+Router(config-if)#ip address 192.16.1.1 255.255.255.0
+Router(config-if)#no shutdown
+Router(config-if)#exit
+
+Router(config)#int se3/0
+Router(config-if)#ip address 220.18.123.9 255.255.255.252
+Router(config-if)#no shutdown
+Router(config-if)#exit
+
+Router(config)#int se2/0
+Router(config-if)#ip address 220.18.123.13 255.255.255.252
+Router(config-if)#no shutdown
+Router(config-if)#exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Router>en
+Router#config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#access-list 100 deny ip 192.16.5.0 0.0.0.255 172.33.8.0 0.0.0.255
+Router(config)#access-list 100 permit any any
+                                       ^
+% Invalid input detected at '^' marker.
+	
+Router(config)#access-list 100 permit ip any any
+Router(config)#int fa0/0
+Router(config-if)#ip access-group 100 in
+Router(config-if)#exit
+Router(config)#
+Router#
+Router#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c 192.16.2.0/24 is directly connected
+c 192.16.1.0/24 is directly connected
+c 220.18.123.8/30
+c 220.18.123.12/30
+
+r
+
+//NOVO
+
+enable
+config t
+
+
+int fa0/0 //desni R2
+ip address 192.16.1.1 255.255.255.0
+no shutdown
+exit
+
+int fa0/1 //levi R2
+ip address 192.16.5.1 255.255.255.0
+no shutdown
+exit
+
+int se0/0 //desni
+ip address 220.18.123.13 255.255.255.252
+no shutdown
+exit
+
+int se0/1
+ip address 220.18.123.9 255.255.255.252
+no shutdown
+exit
+
+c)
+ako gledamo celu sliku
+na ruter r1
+
+access-list 1 deny 192.16.5.0 0.0.0.255
+access-list 1 permit any
+int fa0/0
+ip access-group 1 out
+exit
+
+
+ako gledamo samo r2
+access-list 102 deny ip 192.16.5.0 0.0.0.255 172.33.16.0 0.0.3.255
+access-list 102 permit ip any any
+int fa0/1
+ip access-group 102 in
+
+na ruteru2
+access-list 101 deny tcp 192.16.1.0 0.0.0.255 172.33.16.0 0 0.0.3.255 eq 20
+access-list 101 permit ip any any
+int fa0/0
+ip access-group 101 in
+exit
+
+router rip
+  network 192.16.0.0 
+  network 220.18.123.0
+  version 2
+exit
+
+prikaz routing tabele
+
+C 192.16.5.0 direktno preko fastethernet 0/1
+C 192.16.1.0 direktno preko fastethernet 0/0
+C 220.18.123.12 direktno preko Serial 0/0
+C 220.18.123.8 direktno preko Serial 0/1
+R 172.33.16.0 120/1 220.18.123.13 via Serial0/0
+
+dodatno pogledaj routing tabele
+ 
+ 

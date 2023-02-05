@@ -1,0 +1,21 @@
+kontrola toka je mehanizam koji se koristi da se brzina slanja prilagodi mogucnostima ko prima podatke
+(kontrola toka  predstavlja usaglasavanje brzine kako bi se brzina slanja prilagodila mogucnostima onog ko prima podatke)
+
+kontrola toka se implementira koriscenjem WIN polja u TCP segmentu (47 slajd)
+
+
+
+kontrola zagusenja treba da obezbedi mehanizam za detekciju simptoma i smanjenje zagusenja
+(kontrola zagusenja treba da obezbedi mehanizam za detekciju zagusenjei da preduzme akcije kako bi se smanjilo zagusenje
+
+
+TCP obavlja kontrolu zagušenja podešavajuci velicinu prozora izvora trenutnim mogucnostima mreže i mogucnostima odredišta.
+
+implementira se:
+
+Postoje dva dela TCP mehanizma za kontrolu zagušenja:
+Ako nema simptoma zagušenja, prozor izvora se postepeno i kontinualno povecava da bi se iskoristio trenutno raspoloživi kapacitet mreže (slow start). 
+Povecanje velicine prozora izvora se obavlja sporo tako da se može dobiti povratna reakcija iz mreže, ili od drugog kraja veze, pre nego što nastupi znacajnije zagušenje. 
+Trenutno i veliko smanjenje velicine prozora izvora u slucaju da se detektuje zagušenje. 
+
+ (63 slajd)

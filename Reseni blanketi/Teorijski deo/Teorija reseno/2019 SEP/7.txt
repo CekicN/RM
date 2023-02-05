@@ -1,0 +1,6 @@
+a)slow(eksponencijalno) start do praga 8k					CWND=Windows size
+b)cwnd je dostigao prag sporog start od 8k i primljeno 3 duplikata(fast retransmision)
+c)linearni start i prag sporog starta je postavljen n 4k
+d)cwnd je dostigao winSize do 16 , nastupio timeout, 
+e)treshold (prag sporog starta) prepolovljen na pola od winsiza  (8),cwnd je pao na pocetnu vrednost
+f)cwnd dostigao vrednost 10K i primljena 3 duplikata(fast retransmision)

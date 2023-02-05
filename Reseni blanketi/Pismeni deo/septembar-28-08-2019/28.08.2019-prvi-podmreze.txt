@@ -1,0 +1,145 @@
+193.11.128.0/24
+
+
+102+5=2^7
+193.11.128.0-193.11.128.127/25
+
+48+4=2^6
+193.11.128.128-193.11.128.191/26
+
+28+4=2^5
+193.11.128.192-193.11.128.223/27
+
+18+5=2^5
+193.11.128.224-193.11.128.255/27
+
+
+en
+conf t
+
+int fa0/1
+ip address 193.11.128.1 255.255.255.128
+no shutdown
+exit
+
+int fa0/0 
+ip address 193.11.128.225 255.255.255.224
+no shutdown
+exit
+
+int fa1/0
+ip adress 193.11.128.129 255.255.255.192
+no shutdown
+exit
+
+
+ip dhcp pool gore
+network 193.11.128.0 255.255.255.128
+default-router 193.11.128.1
+exit
+
+ip dhcp pool dole
+network 193.11.128.128 255.255.255.192
+default-router 193.11.128.129
+exit
+
+ip dhcp pool desno
+network 193.11.128.224 255.255.255.224
+default-router 193.11.128.225
+exit
+
+RIP
+
+router rip
+network 193.11.0.0
+network 193.11.128.0
+
+
+2001::/48
+
+2001:0:0:1/64
+
+//opet radjeno 
+
+prvaMreza 107 193.11.128.0 - 193.11.128.127/25
+
+R0 
+f1 193.11.128.1
+
+R1
+f1 193.11.128.2
+
+R3
+f1 193.11.128.3
+
+drugaMreza 52 193.11.128.128 - 193.11.128.191/26
+
+Ro
+f2 193.11.128.129
+
+R2
+f0 193.11.128.130
+
+trecaMreza 32 193.11.128.192 - 193.11.128.223/27
+
+R2
+f1 193.11.128.193
+
+R3 
+f2 193.11.128.194
+
+cetvrtaMreza 23 193.11.128.224 - 193.11.128.255/27
+
+R0
+f0 193.11.128.225
+
+R1
+f0 193.11.128.226
+
+R3
+f0 193.11.128.227
+
+enable 
+config t193.11.128.225
+
+int f0
+ip address 193.11.128.225 255.255.255.224
+no shutdown
+exit
+
+int f1
+ip address 193.11.128.225 255.255.255.125
+no shutdown
+exit
+
+int f2
+ip address 193.11.128.129 255.255.255.192
+no shutdown
+exit
+
+ip dhcp excluded-address 193.11.128.1 193.11.128.3
+ip dhcp excluded-address 193.11.128.225 193.11.128.227
+ip dhcp excluded-address 193.11.128.129 193.11.128.130
+
+ip dhcp pool MREZA1
+ network 193.11.128.0 255.255.255.128
+ default-gateway 193.11.128.1
+exit
+
+ip dhcp pool MREZA2
+ network 193.11.128.128 255.255.255.192
+ default-gateway 193.11.128.130
+exit
+
+
+ip dhcp pool MREZA4
+  network 193.11.128.224 255.255.255.224
+  default-gateway 193.11.128.225
+exit
+
+router rip
+ network 193.11.0.0
+ network 193.11.128.0
+ version 2
+ no auto-summary
+exit

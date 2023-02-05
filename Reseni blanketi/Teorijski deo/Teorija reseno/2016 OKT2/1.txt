@@ -1,0 +1,6 @@
+go back N
+Kada nastupid greska kod 4-tog I-rama svi ostali ramovi bice odbaceni u ovom slucaju 5 i 6
+
+selektivna
+Ukoliko redni brojevi I-ramova 5 i 6 upadaju u prozor odredista oni se baferuju pod uslovom da
+ima mesta u baferu 

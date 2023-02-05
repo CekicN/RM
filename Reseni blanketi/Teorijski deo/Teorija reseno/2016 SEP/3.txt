@@ -1,0 +1,2 @@
+Za odlazne datarame NAT ruter menja izvorisnu IP adresu i broj porta svakog odlaznog datagrama sa NAT IP adresom i 
+novim brojem porta, sto znaci da ce se u TCP zaglavlju promeniti source port number, a u IP zaglavlju source address.

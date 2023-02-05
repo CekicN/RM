@@ -1,0 +1,2 @@
+CD- Collision Detection
+CSMA-Carrier Sense Multiple Access

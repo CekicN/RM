@@ -1,0 +1,3 @@
+bavi se sintaksom podataka koji se prenose kroz mrezu
+sifriranjem
+kompresijom podataka

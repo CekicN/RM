@@ -1,0 +1,1 @@
+Veza se uspostavlja 3-way handshake procedurom, detaljno na slajdu ima

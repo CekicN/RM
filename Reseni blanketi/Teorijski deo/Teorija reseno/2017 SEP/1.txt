@@ -1,0 +1,28 @@
+Konekcioni sevisi
+nema gresaka
+paketi se isporucuju po redosledu
+relacizuje se preko virtualnog kanala (put se uspostavlja u toku uspostavljanja veze)
+radi se handshake
+
+
+Bezkonekcioni
+ne pruza nikakve garancije nivou iznad
+kontrolu gresaka i sekvenciranje obavlja host 
+realizuje se preko datagrama
+paketi mogu putovati razlicitim putevima
+svaki paket se salje nezavisno od prethodnog i sadrzi punu adresu izvora i odredista
+
+
+In connection oriented service authentication is needed, while connectionless service does not need any authentication.
+Connection oriented protocol makes a connection and checks whether message is received or not and sends again if an error occurs, while connectionless service protocol does not guarantees a message delivery.
+Connection oriented service is more reliable than connectionless service.
+Connection oriented service interface is stream based and connectionless is message based.
+
+
+Konekcioni: 
+TCP
+
+Bezkonekcioni:
+UDP,IP,Ethernet
+
+Mrezni nivo treci slajd

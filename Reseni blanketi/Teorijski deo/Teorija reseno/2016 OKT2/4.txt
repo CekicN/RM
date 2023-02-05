@@ -1,0 +1,5 @@
+ovaj host
+host u ovoj mrezi
+broadcast u lokalnoj mrezi
+broadcast u udaljenoj mrezi
+loop back

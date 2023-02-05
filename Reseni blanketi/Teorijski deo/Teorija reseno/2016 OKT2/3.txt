@@ -1,0 +1,3 @@
+DHcp se koristi da automatski prosledi hostu ip adresu,masku,default gateway i adresu DNS-a
+prima dhcdiscover od hosta i odgovora mu sa dhcpoffer u kome prosledju konfiguraciju koju nudi i ceka da mu host
+posalje dhcprequest i ako su parametri u request pruci oni koje mu je on ponudio  odgovara sa dhcpack

@@ -1,0 +1,4 @@
+slow start period
+aditive(linearno) increase
+fast retransmision (3 DUP)
+timeout

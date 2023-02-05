@@ -1,0 +1,2 @@
+Svojstvo funkcije sažetka je da i najmanja promena orginalne poruke uzrokuje drastične promena u njenom sažetku. 
+Verovatnoća da se za dve različite poruke generiše isti sažetak je jako mala.

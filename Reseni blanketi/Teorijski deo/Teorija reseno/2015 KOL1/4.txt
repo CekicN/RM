@@ -1,0 +1,7 @@
+slican zadatak kao januara 2019
+-1V znaci vektorski -1 => 0 binarno
++1v znaci vektorski 1 => 1 binarno
+
+A ne salje nista
+B salje 1
+C salje 0

@@ -1,0 +1,2 @@
+velicina segmenata je 20 bajta (...70, 90, 110,...)
+ack 90 jer u ack je onaj koji se ocekuje

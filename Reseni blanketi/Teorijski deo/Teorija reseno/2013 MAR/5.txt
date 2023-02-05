@@ -1,0 +1,12 @@
+Nat (Network address translation) omogucava da lokalna mreza koristi samo jednu IP adresu sto se tice spoljasnjeg sveta.
+
+NAT ruter mora da:
+ -za odlazne datagrame: zameni izvorisnu IP adresu i broj porta svakog odlaznog datagrama sa NAT IP adresom i novim brojem porta.
+(udaljeni klijenti/serveri ce odgovarati koristeci (NAT IP adresu, novi broj porta) kao odredisnu adresu.
+
+-zapamti (u NAT tabeli transliranja) sve translacije sa (adresa izvorista IP, broj porta) na (NAT IP adresa, novi broj porta)
+
+- za dolazne datagrame: zameni (NAT IP adresa, novi broj porta) u poljima odredista svakog dolazeceg dagarama sa odgovarajucim 
+(izvorisnom IP adresom, brojem porta) koja se nalazi u NAT tabeli
+
+(45 slajd 7.prezentacija)

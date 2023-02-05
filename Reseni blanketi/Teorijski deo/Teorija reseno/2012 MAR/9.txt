@@ -1,0 +1,13 @@
+SEGMENT 1 od klinenta
+
+SYN = 1 ACK = 0
+
+SEGMENT 2 od servera
+
+
+SYN = 1 ACK = 1    ili   RST = 1  
+
+
+SEGMENT 3 od klienta ( ako mu stigne SYN = 1 ACK = 1 )
+
+SYN = 0 ACK = 1

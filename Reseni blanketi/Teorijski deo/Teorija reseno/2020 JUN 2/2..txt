@@ -1,0 +1,7 @@
+Odgovor je pod A)
+
+za organizaciju A treba 2048 adresa, polovina od 4096, dobija se kad od 32 bita oduzmes
+20 za masku, ostaju 12 bita, 2^12 = 4096
+
+Maska za A je /21, za B je /22, jedino resenje je pod A
+pod B ne moze jer je adresa ista 245.248.128.0, i adrese bi se preklapale onda

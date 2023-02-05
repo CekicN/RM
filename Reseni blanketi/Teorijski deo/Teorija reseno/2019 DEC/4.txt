@@ -1,0 +1,5 @@
+a) Ne, jer da bi se obezbedile sve tri stvari uz poruku treba da se posalje i digitalni potpis. Digitalni potpis treba da obezbedi integritet
+poruke (41 slajd, postoji greska, ali za svaki slucaj proveri sa Eminom) i da garantuje identitet posiljaoca. Medjutim, da bi se kreirao digitalni
+potpis poruka se prvo sifrira  Alisinim privatnim kljucem, pa tek onda Bobovim javnim kljucem. Slucaj pod a ne sadrzi digitalni potpis.
+
+b) Poruka se prvo sifrira  Alisinim privatnim kljucem, pa tek onda Bobovim javnim kljucem.

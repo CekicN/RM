@@ -1,0 +1,5 @@
+VREMENSKKI INTERVAL JE PODELJEN NA SLOTOVE JEDNAKE VELICINE I CVOROVI VRSE SLANJE ramova na pocetku svakog slota
+sto znaci da ako nema kolizije na pocetku slota ram ce biti poslat za razliku od ALOHA protokola gde svaki ram moze da se posalje
+u bilo kom trenutku.
+
+kod ALOHA nema sinhronizacije cvorova, a kod slotted ALOHA ima

@@ -1,0 +1,16 @@
+**Proveri za port adresu na internet.
+
+Port adrese bi trebalo da budu privatne ip adrese koje se koriste za komunikaciju 
+izmedju racunara u lokalnim mrezama.
+Moguce je koristiti iste port adrese unutar razlicitih lokalnih mreza. 
+
+Logicke adrese bi trebalo da su javne ip adrese koje se koriste za komunikaciju 
+racunara na internetu. Logicke adrese moraju biti jedinstvene.
+
+Port adrese i lokicke adrese koriste se za komunikaciju na mreznom sloju.
+
+Fizicka (mac) adresa predstavlja adresu mrezne kartice koju je utisnuo proizvodjac i ona se 
+ne moze menjati. Sluzi da se racunar identifikuje unutar lan mreze. Koristi se za komunikaciju na 
+sloju veze.
+
+https://www.quora.com/Why-do-we-need-an-IP-address-to-communicate-within-a-LAN

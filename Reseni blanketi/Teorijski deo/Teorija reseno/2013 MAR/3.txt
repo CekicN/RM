@@ -1,0 +1,5 @@
+64-1500 B
+
+(31 slajd 5.prezentacija)
+
+nije 0, pad(46)+crc(4)+dest(6)+source(6)+type(2)

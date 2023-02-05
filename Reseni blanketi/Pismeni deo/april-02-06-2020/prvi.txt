@@ -1,0 +1,59 @@
+e0-192.168.1.94(poslednja validna adresa)
+e1-192.168.1.62(poslednja validna adresa)
+
+R1
+en
+conf t
+interface e0
+ip address 192.168.1.94 255.255.255.224
+no shutdown
+exit
+
+interface e1
+ip address 192.168.1.62 255.255.255.224
+no shutdown
+exit
+
+router rip
+ network 192.168.1.0 
+ version 2
+exit
+
+ovo treba na ruteru R1 i na tuteru R0 za portove e0
+
+access-list 101 deny tcp 192.168.1.64 0.0.0.32 192.168.1.32 0.0.0.32
+access-list 101 permit http 192.168.1.64 0.0.0.32 192.168.1.32 0.0.0.32 //any any bi odobrilo http ka bilo kojoj mrezi, a to se ne trazi
+
+
+int e0
+ip access-group 101 in 
+exit
+
+ip dhcp excluded-address 192.168.1.61 192.168.1.62 //znaci opseg, ali u ovoj situaciji je to opseg od dve adrese
+ip dhcp excluded-address 192.168.1.93 192.168.1.94
+
+ip dhcp pool Pool1
+  network 192.168.1.64 255.255.255.224
+  default-router 192.168.1.94
+exit
+
+ip dhcp pool Pool2
+  network 192.168.1.32 255.255.255.224
+  default-router 192.168.1.62
+exit
+
+copy running-config startup-config
+
+uradicemo i staticko zbog vezbanja za ruter R1
+
+ip route 192.168.1.100 255.255.255.252 192.168.1.93
+ip route 192.168.1.104 255.255.255.252 192.168.1.61
+
+
+
+
+
+
+
+
+

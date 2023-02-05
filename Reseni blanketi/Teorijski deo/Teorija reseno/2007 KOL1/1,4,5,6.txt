@@ -1,0 +1,12 @@
+4. ima na prezentaciji za PPP - dead, link estb., auth, network layer conf, open, terminating
+
+5. DV prikuplja podatke tako sto salje ECHO svojim susedima i zakljucuje putanje do drugih suseda.
+DV koristi Split Horizon
+
+LS salje HELLO paket cim se ruter upali, zatim salje ECHO paket da otkrije kasnjenje do suseda.
+Prenosi podatke pomocu bujice i svaki paket sadrzi redni broj koji se inkrementira posle.
+
+6. Izlaz iz sistema je Zi,m = Di * Cm (bitovi podataka x kodna sekvenca)
+   A: -1 * (-1, -1, -1, 1, 1, -1, 1, 1) = 1, 1, 1, -1, -1, 1, -1, -1
+   B: -1 * (-1, -1, 1, -1, 1, 1, 1, -1) = 1, 1, -1, 1, -1, -1, -1, 1
+   C: -1 * (-1, 1, -1, -1, -1, -1, 1, -1) = 1, -1, 1, 1, 1, 1, -1, 1

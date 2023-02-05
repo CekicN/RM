@@ -1,0 +1,8 @@
+a) 01110  10110110110001101000110110   01110
+bit stafing ovde ide posle 2 jedinice jer je uramljivanje 01110 (011010 je escape karakter)
+
+01110 001010011 0 011 0 11 0 0011 0 011 0 100 01110
+posle svake 2 jedinice je ubacena nula, bez izuzetaka, cak iako stoji 110101 mora da ide 11 0 0101
+b) 00101001101111000110011100
+ovde gledamo obrnuto, brisemo 01110 sa pocetka i kraja i brisemo nule posle 2 jedinice
+

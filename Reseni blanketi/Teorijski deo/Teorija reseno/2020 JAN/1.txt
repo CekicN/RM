@@ -1,0 +1,4 @@
+Javne adrese su adrese koje se koriste za komunikaciju na Internetu i moraju da budu jedinstvene, dok se privatne
+nikada ne dodejulju kao javne i moraju da budu jedinstvene samo u okviru lokalne mreze (razlicite lokalne mreze mogu da imaju isti opseg privatnih adresa)
+b) kod ipv4 20 bajta se podrazumeva za zaglavlje+ 40 opcionih
+min je 20 max je 60

@@ -1,0 +1,67 @@
+172.16.64.0/22
+2001:102:11::/48
+
+Programersko 120+3=123
+ipv4 172.16.64.0-172.16.64.127 /25
+ipv6 2001:102:11:1::/64
+
+
+Uprava 30+3=33
+ipv4 172.16.64.128-172.16.64.191 /26
+ipv6 2001:102:11:2::/64
+
+Administracija 7+4=11
+ipv4 172.16.64.192-172.16.64.207 /28
+ipv6 2001:102:11:3::/64
+
+ruter 0-levi ruter
+
+enable
+config t
+in fa0/0 -prema programersko
+ip address 172.16.64.1 255.255.255.128
+ipv6 address 2001:102:11:1::1/64
+no shutdown
+
+int fa1/0 desni prema administraciji
+ip address 172.16.64.193 255.255.255.240
+ipv6 address 2001:102:11:3::1/64
+no shutdown
+exit
+
+ip route 172.16.64.128 255.255.255.192 172.16.64.194
+ipv6 unicast-routing
+ipv6 route 2001:102:11:2::/64 2001:102:11:3::2
+
+int fa0/0
+ipv6 nd other-config-flag
+exit
+int fa1/0
+ipv6 nd other-config-flag
+exit
+
+
+router 1 -desni 
+int fa0/0 -prema upravi
+ip address 172.16.64.129 255.255.255.192
+ipv6 address 2001:102:11:2::1/64
+no shutdown
+exit
+int fa1/0 -prema administraciji
+ip address 172.16.64.194 255.255.255.240
+ipv6 address 2001:102:11:3::2/64
+no shutdown
+exit
+
+ip route 172.16.64.0 255.255.255.128 172.16.64.193
+ipv6 unicast-routing
+ipv6 route 2001:102:11:1::/64 2001:102:11:3::1
+
+int fa0/0
+ipv6 nd other-config-flag
+exit
+int fa1/0
+ipv6 nd other-config-flag
+exit
+
+

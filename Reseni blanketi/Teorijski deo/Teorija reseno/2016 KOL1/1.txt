@@ -1,0 +1,4 @@
+Pod racunarskom mrezom se podrazumeva skup medjusobno povezanih i autonomnih racunara koji razmenjuju informacije
+
+Point-to-point
+Broadcast

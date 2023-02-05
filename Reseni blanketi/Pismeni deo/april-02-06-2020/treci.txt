@@ -1,0 +1,70 @@
+
+
+
+void prijava(char* email,char* index)
+{
+
+ WSAData wsa;
+ WSAStartup(0x0202,&wsa);
+
+ SOCKET sock;
+ sock=socket(AF_INET,SOCK_STREAM,0);
+
+
+ sockaddr_in server;
+
+server.sin_family=AF_INET;
+server.sin_port=htons(80);
+server.sin_addr.s_addr=inet_addr("220......");
+
+connect(sock,(sockaadr*)&server,sizeof(sockaddr));
+
+char send_buff[16000];
+char recv_buff[16000];
+ZeroMemory(send_buff);
+ZeroMemory(recv_buff);
+
+char body[1000];
+ZeroMemory(body);
+strcat(body,"email=");
+strcat(body,email);
+strcat(body,"&");
+strcat(body,"index=");
+strcat(body,index);
+
+int recv,send;
+
+strcat(send_buff,"POST /cgi-bin/Prijava.exe HTTP/1.0\n");
+strcat(send_buff,"Content-Length: ");
+strcat(send_buff,strlen(body));
+strcat(send_buff,"\n");
+strcat(send_buff,"Content-Type: texy/plain\n\n");
+strcat(send_buff,body);
+
+send(sock,send_buff,strlen(send_buff)+1,0);
+
+
+recv(sock,recv_buff,16000,0);
+
+
+char *t=strstr(recv_buff,"\r\n\r\n");
+t+=strlen(\r\n\r\n);
+
+while(*t!='\0')
+ printf("%c",*t++);
+
+
+
+
+
+
+closesocket(sock);
+WSACleanup();
+
+
+
+
+
+
+
+}

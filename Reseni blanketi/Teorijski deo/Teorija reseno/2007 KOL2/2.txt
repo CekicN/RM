@@ -1,0 +1,8 @@
+Numeracija se vrsi na osnovu velicine segmenta i rednog broja bajta. Prvi redni broj bajta se bira
+nasumicno i od njega ide nadalje. Svaki prvi redni broj bajta u segmentu je ujedno i broj segmenta
+
+velicina segmenta: 1000 byte
+redni broj segmenta je 90 -> 90...1090
+1091...2090
+2091...3090
+itd...

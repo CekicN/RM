@@ -1,0 +1,2 @@
+Brza retransmisija omogucava TCP-u da izvrsi retransmisiju pre nego sto istekne timeout interval tako sto ce
+primiti 3 ACk sa istim rednim brojem i izvrsiti retransmisiju paketa sa odgovarajucim rednim brojem

@@ -1,0 +1,3 @@
+klijent koji zeli da uspostavi vezu salje segment sa Syn=1 Ack=0
+Server ako prihvata konekciju odgovara sa Syn=1 Ack=1, a ako je odbija sa RST=1
+Ako klijent primi potvrdu od servera odgovara sa Syn=0 ACk=1

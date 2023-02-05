@@ -1,0 +1,1 @@
+numeracija se vrsi tako sto se uzima redni broj prvog bajta unutar segmenta

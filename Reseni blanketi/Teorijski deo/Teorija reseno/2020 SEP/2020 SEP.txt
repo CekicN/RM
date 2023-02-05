@@ -1,0 +1,31 @@
+1. ARQ selektivna retransmisija i Go Back N da se 
+   izracuna velicina prozora ako se poruke numerisu sa n = 3 bita
+kod selek. retrans je 2^(n-1), tj 2^3 = 8, a polovina je 2^(3-1) = 4, prozor ce biti 0,1,2,3
+kod Go Back N je 2^n - 1 , 2^3 - 1 = 7 , prozor ce ici od 0...6
+
+2. CDMA zadatak sa kodovima da se izracuna koju poruku je poslao izvor
+
+3. Koja je razlika izmedju welcome i connection soketa
+
+4. Sta je to kontrola toka a sta je kontrola zagusenja 
+   i kako se implementiraju u TCP-u
+
+5. Nacrtati LS paket i objasniti kako se distribuira
+
+6. Sta je ICMP i napisati bar dve ICMP poruke
+
+7. Tacan odgovor je pod d)
+
+8. Tacan odgovor je pod e)
+
+9. Za TCP Napisati T ako je tvrdjenje tacno ili N ako je netacno
+   
+   TCP je konekcioni servis    T 
+   TCP je protokol nivoa sesije N
+   TCP podrzava do 256 portova N
+   Moze da se ostvari samo jedna TCP sesija izmedju dva hosta N
+   TCP ima half-duplex komunikaciju N
+   TCP koristi Piggybacking T
+
+10.  Zaokruziti na osnovu cega se moze zakljuciti kojoj klasi pripada IP adresa?
+Odgovor je pod e) - 4 bita iz prvog bajta i pod f) - mrezne maske

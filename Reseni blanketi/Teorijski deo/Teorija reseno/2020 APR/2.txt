@@ -1,0 +1,24 @@
+   1     1
+A-----B-----C
+Ako link izmedju B i C otkaze, B zna da vise ne moze da pristupi C i izbacuje putanju iz svoje tabele,
+posto A nije azurirao svoju tabelu i i dalje vidi C preko B po ceni 2 moze se deisiti da posalje
+update ruteru B. U tom slucaju B zakljucuje da moze preko A da dodje do C za cenu 3 i azurira tabelu pa je salje ruteru A
+koji zatim azurira svoju cenu na 4 i tako do beskonacnosti.
+
+
+A)
+  1   5
+A---B---C
+
+Nece doci do problema jer ce ruter npr B ako se cena do C smanji na 4 azurirati svoju tabelu i poslati jer ruteru A koji ce odmah azurirati svoju tabelu.
+U 2 koraka je resen problem.
+
+Nece doci jer ce ruter cija linija je promenila cenu azurirati svoju tabelu i poslati azuriranu tabelu susedima koji ce zatim azurirati svoje tabele.
+
+
+B)
+  1    1
+A   B----C
+     
+Inicijalno put do A ne postoji i cena je beskonacno na oba rutera. Ako uspostavimo vezu izmedju B i A za
+cenu 1 on azurira svoju tabelu i salje je C koji zatim vidi da moze doci do A preko B za 2.

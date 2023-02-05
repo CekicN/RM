@@ -1,0 +1,4 @@
+data link 
+
+
+transportni radi segmentiranje, ne radi sekvenciranje!!!!

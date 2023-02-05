@@ -1,0 +1,16 @@
+N1 - 223.18.43.0/24 A E F
+N2 - 223.18.42.0/24 B
+N3 - 128.77.0.0/16  B C G
+N4 - 192.12.23.0/24 C D H J 
+N5 - 181.99.0.0/16  D E I
+N6 - 123.0.0.0/8    F G H I
+
+TABELA za C
+
+OZANAKA-CVORA  INTERFEJS  ADRESA(NEXT-HOP)  TEZINA-IZLAZNE-GRANE(CENA)
+    N3            1        < >          	6
+    N4            2        < >        		4
+    N6            2        192.12.23.128        6
+    N5         	  2  	   192.12.23.207  	6
+    N1            2        192.12.23.128      	10
+    N2            1        128.77.23.110        9

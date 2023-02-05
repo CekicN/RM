@@ -1,0 +1,7 @@
+A host aplikativni,transportni,internet,pristup mrezi
+B ruter Internet,Pristup Mrezi
+C switch Pristup mrezi
+
+
+
+//internet je isto sto i mrezni, pogledaj prvu prezentaciju

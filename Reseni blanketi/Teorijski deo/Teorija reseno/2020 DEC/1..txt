@@ -1,0 +1,5 @@
+Max velicina prozora je 2*W
+
+ako je w=3 onda je prozor od 0 do 5
+
+kod GBN prozor je W+1, 3+1 = 4 (0,1,2,3)

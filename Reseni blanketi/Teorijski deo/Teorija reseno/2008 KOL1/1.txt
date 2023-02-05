@@ -1,0 +1,5 @@
+1  Parity bit
+2. BCC    - odredjuje se kao parity bit za svaku bitsku poziciju u bloku karaktetra    
+3. Checksum - dobija se kad se 2 16bitne polureci saberu jedinicnim komplementom a onda se invertuje.
+4. CRC(FCS) - Polinomski kodovi
+

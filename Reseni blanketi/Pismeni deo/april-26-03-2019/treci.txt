@@ -1,0 +1,60 @@
+#include <winsock.h>
+#include <stdio.h>
+#include <string.h>
+#include <iostream>
+#pragma comment(lib, "wsock32.lib")
+
+void main()
+{
+	WSAData wsa;
+	WSAStartup(0x0202, &wsa);
+
+	SOCKET cSocket;
+	sockaddr_in server;
+
+	if ((cSocket = socket(AF_INET, SOCK_STREAM, 0)) == SOCKET_ERROR)
+	{
+		WSACleanup();
+		closesocket(cSocket);
+		exit(1);
+	}
+	server.sin_family = AF_INET;
+	server.sin_port = htons(80);
+	server.sin_addr.s_addr = inet_addr("198.162.12.118");
+
+	if ((connect(cSocket, (sockaddr*)&server, sizeof(sockaddr))) == SOCKET_ERROR)
+	{
+		WSACleanup();
+		closesocket(cSocket);
+		exit(1);
+	}
+	char send_buff[] = "GET /index.html HTTP/1.0\n\n";
+	char recv_buff[1024];
+	int send_byte, recv_byte;
+
+	send_byte = send(cSocket, send_buff, strlen(send_buff)+1, 0);
+	if (send_byte < 0)
+	{
+		WSACleanup();
+		closesocket(cSocket);
+		exit(1);
+	}
+
+	recv_byte = recv(cSocket, recv_buff, 1024, 0);
+	if (recv_byte < 0)
+	{
+		WSACleanup();
+		closesocket(cSocket);
+		exit(1);
+	}
+
+	char* t = strstr(recv_buff, "HTTP/1.0 200 OK");
+	if (t != NULL)
+	{
+		printf("postoji");
+	}
+	else
+	{
+		printf("noup");
+	}
+}

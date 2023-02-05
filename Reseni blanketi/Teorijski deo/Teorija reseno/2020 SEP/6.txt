@@ -1,0 +1,2 @@
+ICMP je protokol na mreznom nivou koj se koristi za detekciju greske, hijerarhijski se nalazi iznad IP (51-55 slajd)
+time-exceeded i echo-request (ping) na primer

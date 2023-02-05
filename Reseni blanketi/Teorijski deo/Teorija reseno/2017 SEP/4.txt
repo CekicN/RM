@@ -1,0 +1,2 @@
+Header je 32 bita (4 bajta) fiksirano (type,code,checksum), plus 32 bita za ostatak headera
+sto cini 8 bajta, pod C)

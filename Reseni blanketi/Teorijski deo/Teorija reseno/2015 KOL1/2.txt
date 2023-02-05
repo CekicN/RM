@@ -1,0 +1,16 @@
+Konekcioni servis:
+-nema gresaka
+-paketi se isporucuju po redosledu slanja
+-obicno implementiran preko virtuelnog kanala(VC)
+-pre pocetka slanja, salje se specijalni paket CALL REQUEST da bi se uspostavila veza
+-idealan kom. kanal za transp. nivo
+-svi paketi koriste isti put do odredista
+-paketi sadrze broj VC (virtuel channel) umesto adrese
+
+Bezkonekcioni servis:
+-ne pruza garancije transp. nivou
+-kontrolu gresaka i sekvenciranje obavlja host(transp. nivo)
+-realizuje se preko datagrama
+-nema inicijalnog uspostvaljanja veze
+-svaki paket se nezavisno salje od prethodnog
+-paketi mogu putovati razlicitm putevima i stizati van redosleda

@@ -1,0 +1,49 @@
+//imageName=ime&format=.jpg
+
+char* query;
+
+int size=atoi(getenv("CONTENT-LENGTH"));
+if(size>0){
+ query=new char[size];
+ scanf("%s",query);
+}
+
+char* name,type;
+
+strtok(query,"=&");
+name=strtok(NULL,"=&");
+strtok(NULL,"=&");
+type=strtok(NULL,"=&");
+
+char path[1024];
+strcpy(path, "putanja do slike/");
+strcat(path,name);
+strcat(path,type)
+
+CFile f;
+
+if(f.Open(path, CFile::modeRead)!=0){
+ DWORD len=f.GetLength();
+
+ printf("Content-Type: image/%s\r\n",type);
+ printf("Content-Length: %d\r\n",len);
+
+ _setmode(_fileno(stdout), _O_BINARY);
+
+ for(int i=0;i<len;i++){ 
+   BYTE buff;
+   f.Read(&buff,1);
+   printf("%c",buff);
+ }
+  _setmode(_fileno(stdout), _O_TEXT);
+  f.Close();
+}else{
+  printf("Content-type: text/plain\r\n");
+  printf("<html><head><tittle>Error</tittle></head><body><p>Slika nije pronadjenja</p></body></html>")
+}
+
+
+
+
+
+

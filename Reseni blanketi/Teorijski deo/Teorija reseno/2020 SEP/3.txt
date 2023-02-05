@@ -1,0 +1,2 @@
+welcome je socket koji klijent koristi da kontaktira server
+connection socket je socket koji server kreira za svakog klijenta koji je poslao zahtev

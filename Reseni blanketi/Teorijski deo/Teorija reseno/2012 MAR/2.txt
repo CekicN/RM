@@ -1,0 +1,10 @@
+[preambule|SFD|DA|SA|TYPE|DATA|PAD|CRC]
+
+preambula - predstavlj 7 bajtova koji izgleda 10101010 i sluzi za sinhronizaciju brzine prenosa izvora i odredista
+SFD - 10101011 , oznacava pocetak frejma
+DA - dest adr   6bajta
+SA - src adr   6bajta
+TYPE - protokol kome su podaci namenjeni ili duzina polja podataka
+DATA 0 - 1500
+PAD - 0 - 46 nule koje se dodaju, da bi se ispostovala min velicina okvira
+CRC - polje za detekciju greaska (4bajta)

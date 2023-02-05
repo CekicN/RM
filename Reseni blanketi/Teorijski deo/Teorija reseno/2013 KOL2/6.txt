@@ -1,0 +1,5 @@
+Connect salje Connect request serveru i blokira klijent. Pokusava da uspostavi konekciju
+Listen blokira proces dok ga ne kontaktira neki drugi
+Send Slanje pdataka
+Receive blokira proces dok ne stignu podaci
+Disconect salje se dissconection required od strane koja zeli da prekine vezu

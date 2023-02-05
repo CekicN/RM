@@ -1,0 +1,3 @@
+a) Nece ram se procesira tek kad se datagram prosledi mreznom nivuo i utvrdi da je destination address adresa tog hosta. Nece se poslati jer nije adresiran za njega
+b) nece prosledeiti mreznom nivou jer DA adresa nije broadcast niti njegova adresa i odbacice ram
+c) ram ce da prosledi mreznom nivou zato sto je adresiran na broadcast ali ga nece procesirati jer adresa destination u IP datragamu nije afresa hosta B

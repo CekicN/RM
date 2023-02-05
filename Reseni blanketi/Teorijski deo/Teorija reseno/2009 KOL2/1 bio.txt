@@ -1,0 +1,1 @@
+ICMP je protokol za detekciju gresaka kod IP, detaljno na slajdovima ima

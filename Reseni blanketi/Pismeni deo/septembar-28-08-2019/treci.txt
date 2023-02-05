@@ -1,0 +1,59 @@
+#include <winsock.h>
+#include <stdio.h>
+#include <string.h>
+#include <iostream>
+#pragma comment(lib, "wsock32.lib")
+
+int main()
+{
+	WSAData wsa;
+	WSAStartup(0x0202, &wsa);
+
+	SOCKET cSocket;
+	sockaddr_in server;
+
+	if ((cSocket = socket(AF_INET, SOCK_STREAM, 0)) == SOCKET_ERROR){
+		closesocket(cSocket);
+		WSACleanup();
+		exit(1);
+	}
+
+	server.sin_family = AF_INET;
+	server.sin_port = htons(80);
+	server.sin_addr.s_addr = inet_addr("160.99.12.234");
+
+	if (connect(cSocket, (sockaddr*)&server, sizeof(sockaddr)) == SOCKET_ERROR){
+		closesocket(cSocket);
+		WSACleanup();
+		exit(1);
+	}
+
+	char send_buff[] = "GET /cenovnik.html HTTP/1.0\n\n";
+	char recv_buff[1024];
+
+	if (send(cSocket, send_buff, strlen(send_buff)+1, 0) < 0){
+		closesocket(cSocket);
+		WSACleanup();
+		exit(1);
+	}
+
+	if (recv(cSocket, recv_buff, 1024, 0) < 0){
+		closesocket(cSocket);
+		WSACleanup();
+		exit(1);
+	}
+	
+	char* t = strstr(recv_buff, "HTTP/1.1 200 OK");
+	if (t != NULL){
+		printf("Postoji\n");
+		t = strstr(recv_buff, "Last-Modified: ");
+		t += strlen("Last-Modified: ");
+		while (*t != '\n'){
+			printf("%c", *t++);
+		}
+	}
+
+	closesocket(cSocket);
+	WSACleanup();
+	return 0;
+}

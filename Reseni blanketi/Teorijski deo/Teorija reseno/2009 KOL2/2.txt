@@ -1,0 +1,1 @@
+Ako taj ko salje nema kod sebe Ethernet adresu primaoca on salje broadkast ip adresu odredista, onaj ciji je adresa, ce odgovoriti svojom mac adresom.

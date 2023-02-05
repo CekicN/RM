@@ -1,0 +1,5 @@
+MOST JE UREDJAJ KOJI SE KORISTI DA ODVOJI JEDAN LAN U VISE SEGMENATA(KOLIZIONIH DOMENA). 
+Koristi tabelu na osnovu koje odredjuje gde da salje podatak. 
+Ako se odredisna MAC adresa nalazi u njegovoj tabeli i ako se nalazi u segmetnu sa koga je dosao paket odbacuje ram, a ako nije sa tog segmenta prosledjuje frame na odgovarajuci interfejs. 
+Ako se MAC ne nalazi u tabeli primeniti bujicu(svima sem portu sa kog je dosao).
+Most je pametni uredjaj koji uci adresu posiljaoca ako je nema u tabeli.

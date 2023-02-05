@@ -1,0 +1,17 @@
+host A salje ARP upit u kome pita ko ima Ip 133.133.133.2
+Posto Arp stize i do rutera a on vidi da Ip nije iz te mreze on ce poslati odgovor 
+hostu A gde ce mu poslati svoj MAc AB-Ab-Ab-CD-cd-cd
+Host a stavlja datagram u polje podataka ethernet rama i adresira ga na ab-ab-ab-cd-cd-cd
+Ruter r1 prima ethernet ram izvlaci datagram i trazi Ip u svojoj tabeli rutiranja
+on ce ili da posalje paket ruuteru R2 ako ima podatke u tabeli a ako nema poslace arp u kome pita ko ima tu adresu
+r2 ce da odgovri na ovaj arp 
+r1 mu salje paket
+r2 prima paket
+r2 tazi adresu u kesu ako je nema i on emituje arp na koji ce da odgovori host F
+zatim on salje paket hostu F
+
+
+-------
+
+
+

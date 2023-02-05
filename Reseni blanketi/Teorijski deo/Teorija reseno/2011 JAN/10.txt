@@ -1,0 +1,4 @@
+SSL je odmah iznad TCP protokola.
+
+1.Protkol za uspostavljanje bezbednu konekciju
+2.Protkol koji koristi bezbednu konekciju za slanje podataka

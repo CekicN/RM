@@ -1,0 +1,6 @@
+za fleg se koristi 01111110
+ako se pojavi u data segmentu mora da se doda escape bajt ispred sekvence 
+bajt je 01111101
+
+
+FLAG 11100111 01111101 01111110 01111101 01111110 0001110 FLAG

@@ -1,0 +1,3 @@
+255.255.254.0 je subnet za klasu B
+
+odgovori su B, C i E adrese

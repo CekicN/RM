@@ -1,0 +1,14 @@
+3
+name:umass.edu value:dns.umass.edu type:NS
+name:dns.umass.edu value:IP(dns.umass.edu) type:A
+
+6,7,8
+name:gaia.cs.umass.edu value:IP(gaia.cs.umass.edu) type:A
+
+1,2,4,5 Upit u kome se trazi ip adresa hosta
+
+
+
+
+
+

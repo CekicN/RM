@@ -1,0 +1,1 @@
+Min velicina je 64 da bi se otkrila kolizija(Koristi CSMA/CD - to je protokol za slucajni pristup prenosnom mediumu) 

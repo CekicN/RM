@@ -1,0 +1,1 @@
+Uvek ce slati na tu adresu sem ako njohov lokalni name server nije kesirao staru adresu

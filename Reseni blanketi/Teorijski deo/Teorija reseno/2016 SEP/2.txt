@@ -1,0 +1,4 @@
+1) ip adresa - jedinstvena adresa uredjaja na mrezi
+2) default gateway - adresa rutera koji se koristi za komunikaciju sa drugim mrezama
+3) maska - maska koja definise mrezu kojoj adresa i uredjaj pripadaju
+4) adresa DNS-a - adresa default DNS servera koji se koristi za translaciju hostname i ip adresa i za povezivanje na Internet

@@ -1,0 +1,17 @@
+<html>
+<head>
+<tittle>Izbor fajla</tittle>
+</head>
+<body>
+<h1> Izaberite</h1>
+<form action="nazivcgiapp.cgi" method=post>
+    <p>Unesite naziv slike <input type=text name="imageName"></p>
+    <p>Odaberite format</p>
+    <select name="format">
+    <option value=".jpg">JPG</option>
+    <option value=".png">PNG</option>
+    </select>
+    <input type=submit value="Pribavi">
+</form>
+</body>
+</html>

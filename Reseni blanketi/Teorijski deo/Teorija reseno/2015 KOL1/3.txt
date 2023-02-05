@@ -1,0 +1,2 @@
+a) odbacuje kod go back n jer ocekuje neki drugi ram
+b) kod selek. retrans. se baferuje u prozor sve dok ima mesta

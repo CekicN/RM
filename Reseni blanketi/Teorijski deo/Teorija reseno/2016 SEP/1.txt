@@ -1,0 +1,19 @@
+Konekcioni postavljaju inicijalno vezu izmedju hostova a bezkonekcioni ne uspostavljaju konekciju
+
+Kod bezkonekcionih paketi se prenose nezavisno jedni od drugih i mogu imati razlite putanje, ujedno
+se ne proveravaju greske, javljaju se gubici i mogu stici preko reda
+
+Kod konekcionih paketi se prenose jednom istom putanjom i zavisni su jedan od drugog, paketi se 
+proveravaju i ne mogu stici preko reda, i nema gubitaka
+
+Konekcioni su
+TCP
+SMTP
+TELNET
+FTP
+
+Bezkonekcioni su
+UDP
+ICMP
+IP
+Ethernet

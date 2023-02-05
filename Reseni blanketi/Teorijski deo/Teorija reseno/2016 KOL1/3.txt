@@ -1,0 +1,5 @@
+Odgovor je pod a)
+
+The FCS provides error detection only. 
+Error recovery must be performed through separate means. 
+Ethernet, for example, specifies that a damaged frame should be discarded and does not specify any action to cause the frame to be retransmitted. 

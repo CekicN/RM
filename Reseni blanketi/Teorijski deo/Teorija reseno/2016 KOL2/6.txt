@@ -1,0 +1,12 @@
+a) n=31 je prost, odma ne moze
+b) n=77 p=7 q=11 e=7 d=43
+
+	z=(p-1)(q-1) = 60
+
+	e*d MOD z = 1    ako  TRUE onda DA 
+	301 MOD 60 = 1
+
+c) 55 = 5*11   p =5 q = 11   40 = (p-1)*(q-1)
+
+   287 mod 40 != 1 ne moze
+

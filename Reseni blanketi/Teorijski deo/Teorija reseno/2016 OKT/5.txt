@@ -1,0 +1,7 @@
+255.255.255.255
+
+
+
+131.15.255.255 ovo ne moze jer ne znamo koja je maska!!!!
+
+

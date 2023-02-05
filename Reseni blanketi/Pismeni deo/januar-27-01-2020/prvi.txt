@@ -1,0 +1,120 @@
+172.16.16.0/23 2001:AA:103::/48
+ 
+SW4
+172.16.16.0-172.16.16.255/24
+2001:AA:103:1::/64
+
+
+
+
+SW0+SW5 95
+172.16.17.0-172.16.17.127/25
+2001:AA:103:2::/64
+
+SW1
+172.16.17.128-172.16.17.255/25
+2001:AA:103:3::/64
+
+SW3
+172.16.18.0-172.16.18.31/27
+2001:AA:103:4::/64
+
+SW2
+172.16.18.32-172.16.18.47/28
+2001:AA:103:5::/64
+
+R0-R1
+172.16.18.48-172.16.18.51/30
+2001:AA:103:6::/64
+
+R1-R2
+172.16.18.52-172.16.18.55/30
+2001:AA:103:7::/64
+
+R0-R2
+172.16.18.56-172.16.18.59/30
+2001:AA:103:8::/64
+___________________________________________________________
+ROUTER R0
+
+en
+conft t
+
+int fe0/0 //Switch1
+ip address 172.16.17.129 255.255.255.128
+ipv6 address 2001:AA:103:3::1/64
+ipv6 address fe80::1 link-local
+no shutdown
+exit
+
+int fe0/1 //Switch 0+5
+ip address 172.16.17.1 255.255.255.128
+ipv6 address 2001:AA:103:2::1/64
+ipv6 address fe80::1 link-local
+no shutdown 
+exit
+
+int se0/0 //RO-R1
+ip address 172.16.18.49 255.255.255.252
+ipv6 address 2001:AA:103:6:1/64
+no shutdown
+exit
+
+int se0/1 //R0-R2
+ip address 172.16.18.57 255.255.255.252
+ipv6 address 2001:AA:103:8:1/64
+no shutdown
+exit
+
+router rip
+ network 172.16.18.0 
+ network 172.16.17.0
+ network 172.16.0.0
+ version 2	
+exit
+
+ipv6 unicast-routing
+ipv6 router rip rutiranje1
+
+int fa0/0
+ipv6 rip rutiranje1 enable
+exit
+
+int fa0/1
+ipv6 rip rutiranje1 enable
+exit
+
+int se0/0
+ipv6 rip ruitranje1 enable
+exit
+
+int se0/1
+ipv6 rip rutiranje1 enable
+exit
+
+ip dhcp excluded-address 172.16.17.129
+ip dhcp excluded-address 172.16.17.1
+ip dhcp excluded-address 172.16.17.2
+ip dhcp pool SW1
+ network 172.16.17.128 255.255.255.128
+ default-router 172.16.17.129
+exit
+ip dhcp pool SW0SW5
+ network 172.16.17.0 255.255.255.128
+ default-router 172.16.17.1
+exit
+
+int fa0/0
+ipv6 nd other-config-flag
+exit
+
+int fa0/1
+ipv6 nd other-config-flag
+exit
+
+
+
+
+
+
+

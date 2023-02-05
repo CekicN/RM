@@ -1,0 +1,2 @@
+Logicko ime hosta u IP = DNS u aplikativnom sloju
+IP adrese u fizicke adrese = ARP u mreznom sloju

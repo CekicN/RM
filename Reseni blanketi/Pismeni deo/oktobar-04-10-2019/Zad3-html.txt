@@ -1,0 +1,21 @@
+<html>
+<head>
+<tittle>
+Izbor slike
+</tittle>
+</head>
+<body>
+
+<form method=GET action="getimage.cgi">
+<p>Izaberite jednu od slika</p>
+<select name="image">
+<option value="slika1">Slika 1</option>
+<option value="slika2">Slika 2</option>
+<option value="slika3">Slika 3</option>
+</select>
+<input type=submit name="action" value="Get image">
+</form>
+</body>
+</html>
+
+zahtev ce da bude image=slika1&action=Get+image

@@ -1,0 +1,137 @@
+192.168.176.0/21
+
+LAN3
+192.168.176.0-192.168.176.255/24
+
+LAN2
+192.168.177.0-192.168.177.127/25
+
+LAN1
+192.168.177.128-192.168.177.255/25
+
+LAN0 
+192.168.178.0-192.168.178.63/26
+
+LAN4
+192.168.178.64-192.168.178.95/27
+
+LA5
+192.168.178.96-192.168,178,127/27
+
+en
+conf t
+
+--LAN4--
+int fa0/0
+ip address 192.168.178.65 255.255.255.224
+no shutdown
+exit
+
+int fa0/1
+ip address 192.168.178.97 255.255.255.224
+no shutdown
+exit 
+
+
+int fa1/0
+ip address 10.10.10.3 255.255.255.248
+no shutdown
+exit
+
+int se0/0 
+ip address 188.46.37.253 255.255.255.252
+no shutdown
+exit
+
+ip dhcp excluded-address 192.168.178.65 
+ip dhcp excluded-address 192.168.178.97
+
+ip dhcp pool LAN4
+network 192.168.178.64 255.255.255.224
+default-router 192.168.178.65
+exit
+
+ip dhcp pool LAN5
+network 192.168.178.96 255.255.255.224
+defualt-router 192.168.178.97
+exit
+
+ip route 192.168.178.0 255.255.255.192 10.10.10.1 
+ip route 192.168.177.128 255.255.255.128 10.10.10.1
+ip route 192.168.177.0 255.255.255.128 10.10.10.2
+ip route 192.168.176.0 255.255.255.0 10.10.10.2
+
+access-list 101 permit ip LAN4 LAN5  
+
+
+
+
+
+
+
+
+
+
+//radnjeno opet
+
+192.168.176.0/21
+
+LAN3 
+192.168.176.0-192.168.176.255 /24
+
+LAN2 
+192.168.177.0-192.168.177.127 /25
+
+LAN1
+network 192.168.177.128 /25
+broadcast 192.168.177.255
+
+
+LAN0
+192.168.178.0-192.168.178.63 /26
+
+LAN4
+192.168.178.64-192.168.178.95 /27
+
+LAN5
+192.168.178.96-192.168.178.127 /27
+
+Serial0/0 188.46.37.253
+
+
+
+enable
+config terminal
+int fa0/0
+ip address 192.168.178.65 255.255.255.224
+no shutdown
+exit
+
+int fa0/1
+ip address 192.168.178.97 255.255.255.224
+no shutdown
+exit
+
+int se0/0
+ip address 188.46.37.253 255.255.255.252
+no shutdown
+exit
+
+ip dhcp excluded-address 192.168.178.65
+ip dhcp excluded-address 192.168.178.97
+ip dhcp pool LAN4
+ network 192.168.178.64 255.255.255.224
+ default-gateway 192.168.178.65
+exit
+
+ip dhcp pool LAN5
+ network 192.168.178.96 255.255.255.224
+ default-gateway 192.168.178.97
+exit
+
+ip route 192.168.178.0 255.255.255.192 10.10.10.1
+ip route 192.168.177.128 255.255.255.128 10.10.10.1
+ip route 192.168.177.0 255.255.255.128 10.10.10.2
+ip route 192.168.176.0 255.255.255.0 10.10.10.2
+
+

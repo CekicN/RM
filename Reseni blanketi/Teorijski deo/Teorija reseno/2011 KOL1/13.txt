@@ -1,0 +1,22 @@
+SLAJD 25
+
+
+
+LINK STATE -razmenjuju se LS paketi koji sadze sve informacije koje ruter trenuntno zna.
+
+FORMAT:        Source Adress
+		Redni Bbroj
+		    AGE
+	Lista Suseda | Kasnjenje
+
+DISTANCE VECTOR - razmenjuju se table
+
+		Ruter | Sused1 | Sused2 | .... | Sused
+	Ostali Ruteri... 
+		_____
+		...
+		_____
+		...
+		_____
+
+

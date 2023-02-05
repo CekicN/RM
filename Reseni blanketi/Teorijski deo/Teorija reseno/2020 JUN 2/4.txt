@@ -1,0 +1,13 @@
+**valjda tacno**
+adam: mailhost.moja.mreza.sr, 10.11.12.2, A vexx2022 ispravka?: (adam.moja.mreza.sr, 10.11.12.2, A)
+      moja.mreza.sr, mailhost.moja.mreza.sr, MX          vexx2022:    (mailhost.moja.mreza.sr, adam.moja.mreza.sr, MX)     
+
+bertil: www.moja.mreza.sr, moja.mreza.sr, CNAME    vexx2022: (www.moja.mreza.sr, bertil.moja.mreza.sr, CNAME)    
+        ftp.moja.mreza.sr, moja.mreza.sr, CNAME        vexx2022: (ftp.moja.mreza.sr, bertil.moja.mreza.sr, CNAME)
+        bertil.moja.mreza.sr, 10.11.12.3, A
+
+cesar.moja.mreza.sr, 10.11.12.4, A
+
+david.moja.mreza.sr, 10.11.12.5, A
+
+erik.moja.mreza.sr, 10.11.12.6, A

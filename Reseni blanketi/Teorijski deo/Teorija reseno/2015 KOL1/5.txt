@@ -1,0 +1,8 @@
+distribucija se vrsi bujicom
+
+adresa izvora
+ redni broj
+    age
+lista    kasnjenje
+sudeda
+  

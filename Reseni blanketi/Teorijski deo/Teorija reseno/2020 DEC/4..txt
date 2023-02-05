@@ -1,0 +1,3 @@
+Mrezni nivo zna kome da prosledi datagram na osnovu polja PROTOCOL u IP zaglavlju datagrama
+tcp je 6 hexa, udp je 11 hexa - 17 decimalno
+ujedno u checksum kod tcp ima polje protocol koje se uzima upravo iz IP zaglavlja

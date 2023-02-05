@@ -1,0 +1,4 @@
+UDP je bezkonekcioni, brzi i nema proveru gresaka, dozvoljava point to point vezu i point to multipoint vezu
+
+TCP je konekcioni, sporiji od UDP, ima proveru gresaka i numeraciju poruka, i dozvoljava samo 
+point to point vezu

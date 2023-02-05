@@ -1,0 +1,12 @@
+A)Acom 192.5.6.30 (mislim da treba a.gltd-servers.net 192.5.6.30)
+Agoogle.com 216.129.32.10 (mislim da treba ns1.google.com, 216.129.32.10)
+
+B)
+host C pita Lokalni name server L na Ip adresi servera L i trazi preslikavanje za www.google.com
+L ne nalazi pa pita Aroot na adresi 198.41.0.4 i trazi preslikavanje za www.google.com
+Aroot ne nalazi i odgovara sa R1 i R2
+Lokalni L sada pita Acom na adresi 192.5.6.30 i trazi preslikavanje za www.google.com
+Acom ne nalazi i odgovara sa R3 i R4
+Lokalni L pita Agoogle.com na adresi 216.... i trazi preslikavanje za www.google.com
+Agoogle.com nalazi preslikavanje
+Hostu C se prosleduju informacije sa R5 i pristupa se sajtu www.google.com

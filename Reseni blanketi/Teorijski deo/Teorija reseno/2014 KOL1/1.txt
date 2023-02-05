@@ -1,0 +1,2 @@
+GO BACK N    W=8-1= 7 paketa ce se poslati bez potvrde (No >= w+1)
+SELEKTIVNA   W=8/2= 4 paketa ce se poslati bez potvrde (No >= 2w)

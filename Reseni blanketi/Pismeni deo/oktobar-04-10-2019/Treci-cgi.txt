@@ -1,0 +1,47 @@
+
+
+char* query;
+
+query=getenv("QUERY_STRING");
+
+
+
+
+
+char *slika;
+
+strtok(query,"=&");
+slika=strtok(NULL,"=&");
+
+
+
+char path[1024];
+strcpy(path, "putanja do slike/");
+strcat(path,slika);
+
+
+CFile f;
+
+if(f.Open(path, CFile::modeRead)!=0){
+    DWORD len=f.GetLength();
+
+    printf("Content-Type: image/jpg\r\n);
+    printf("Content-Length: %d\r\n",len);
+
+    _setmode(_fileno(stdout),_O_BINARY);
+
+    for(i=0;i<len;i++){
+        BYTE buf;
+        f.Read(&buf,1);
+        printf("%c",buf)
+    }
+    _setmode(_fileno(stdout),_O_TEXT);
+    f.close();
+}else{
+  printf("Content-type: text/plain\r\n");
+  printf("<html><head><tittle>Error</tittle></head><body><p>Slika nije pronadjenja</p></body></html>")
+}
+
+
+
+

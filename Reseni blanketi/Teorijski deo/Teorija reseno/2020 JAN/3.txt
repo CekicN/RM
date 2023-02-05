@@ -1,0 +1,4 @@
+Salje je onoj adresi koja se nalazila u source address polju IP paketa, tj hostovima.
+Salje dodatnih 8 bajta za payload paketa koji je aktivirao icmp.
+
+Nalazi se data section posle zaglavlja, a u zaglavlju se nalazi code, type i checksum

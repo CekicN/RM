@@ -1,0 +1,10 @@
+priodic timer (tajmer periode) - kontrolise kada ce poruke za azuriranje puteba da budu razmenjene, koristi slucajnu 
+vrednost izmedju 25 i 35 sekundi
+
+Expiration timer (tajmer isteka vazenja) - ako nijedna poruka za datu destinaciju ne stigne u roku od 180 sekundi ona postaje
+nevalidna, brojac skokova se postavlja na 16
+
+Garbage Collection Timer - kada destinacija postane nevalidna, narednih 120 sekundi ce ruter idalje saopstavati da je broj
+skokova 16. Kada prodje 120 sekundi, destinacija se brise iz tabele rutiranja.
+
+(92, 93 slajd 5.prezentacija)

@@ -1,0 +1,9 @@
+  1   1
+A---B---C
+Ukoliko dodje do otkaza veze izmedju A i B ruter B ce to videti i azurirati svoju tabelu. Problem nastaje ako
+ruter C posalje update ruteru B pre nego sto je od njega dobio azuriranu tabelu. Sada ruter B vidi A po ceni 3i salje update ruteru C
+koji azurira svoju tabelu na 4 i salje update ruteru B i tako do beskonacnosti.
+
+
+Ako Z koristi Y da dodje do X. Pri razmewni tablica Z ce reci Y da je njegova cena do X beskonacno. On ce nastaviti da govori laznu informaciju Y sve do put do X vodi preko Y.
+Posto Y mislis da Z nema put do X nikada nece pokusati da dodje do X preko Z.
